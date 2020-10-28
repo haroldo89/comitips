@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace CoreBot.Model
 {
+    /// <summary>
+    /// Registro en base de datos
+    /// </summary>
     public class RegistroRepository : IRepository<registro>
     {
         private string DbConnectionString { get; set; }
