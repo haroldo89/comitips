@@ -1,0 +1,1235 @@
+{
+    "luis_schema_version": "7.0.0",
+    "intents": [
+        {
+            "name": "Saludo"
+        },
+        {
+            "name": "Ventas"
+        },
+        {
+            "name": "Compensacion"
+        },
+        {
+            "name": "Reclamaciones"
+        },
+        {
+            "name": "Penalizaciones"
+        },
+        {
+            "name": "Comision"
+        },
+        {
+            "name": "Cancel"
+        },
+        {
+            "name": "None"
+        }
+    ],
+    "entities": [],
+    "hierarchicals": [],
+    "composites": [
+        {
+            "name": "de",
+            "children": [
+                {
+                    "name": "Agente"
+                }
+            ],
+            "roles": [],
+            "features": []
+        },
+        {
+            "name": "para",
+            "children": [
+                {
+                    "name": "Agente"
+                }
+            ],
+            "roles": [],
+            "features": []
+        }
+    ],
+    "closedLists": [
+        {
+            "name": "Saludos",
+            "subLists": [
+                {
+                    "canonicalForm": "HOLA",
+                    "list": [
+                        "hola",
+                        "holas",
+                        "HOLA",
+                        "BUENAS",
+                        "BUENAS TARDES",
+                        "BUENAS NOCHES",
+                        "BUENOS DIAS",
+                        "buenas",
+                        "buenas tardes",
+                        "buenas noches",
+                        "buenos dias"
+                    ]
+                }
+            ],
+            "roles": []
+        },
+        {
+            "name": "Agente",
+            "subLists": [
+                {
+                    "canonicalForm": "CENTRO_EXPERIENCIA",
+                    "list": [
+                        "Centro",
+                        "centro de experiencia",
+                        "centro de exper",
+                        "CENTRO DE EXPERIENCIA",
+                        "CENTROS DE EXPERIENCIA"
+                    ]
+                },
+                {
+                    "canonicalForm": "PREVENTA",
+                    "list": [
+                        "PREVENTA",
+                        "preventa",
+                        "pre venta",
+                        "PRE VENTA"
+                    ]
+                },
+                {
+                    "canonicalForm": "CORPORACIONES",
+                    "list": [
+                        "CORPORACION",
+                        "CORPORACIONES",
+                        "corporacion",
+                        "corporaciones"
+                    ]
+                },
+                {
+                    "canonicalForm": "EMPRESAS",
+                    "list": [
+                        "EMPRESA",
+                        "empresa",
+                        "EMPRESAS",
+                        "empresas"
+                    ]
+                },
+                {
+                    "canonicalForm": "CANAL_AGENTES_RETAIL",
+                    "list": [
+                        "CANAL AGENTES RETAIL",
+                        "AGENTES RETAIL",
+                        "CANAL AGENTES",
+                        "canal agentes retail",
+                        "agentes retail",
+                        "canal agentes"
+                    ]
+                }
+            ],
+            "roles": []
+        },
+        {
+            "name": "VentaMessage",
+            "subLists": [
+                {
+                    "canonicalForm": "RECUPERACIONQ",
+                    "list": [
+                        "RECUPERACIÓN",
+                        "RECUPERACION",
+                        "recuperación",
+                        "recuperacion",
+                        "recuperacion q",
+                        "recuperación q",
+                        "RECUPERACIONQ",
+                        "RECUPERACIÓNQ",
+                        "RECUPERACION Q",
+                        "RECUPERACIÓN Q",
+                        "REC Q",
+                        "rec q",
+                        "RECU Q",
+                        "recu q"
+                    ]
+                },
+                {
+                    "canonicalForm": "CATERPILLAR",
+                    "list": [
+                        "Caterpillar",
+                        "caterpillar",
+                        "CATERPILLAR",
+                        "Caterpilar",
+                        "CATERPILAR"
+                    ]
+                },
+                {
+                    "canonicalForm": "PLANESFLEX",
+                    "list": [
+                        "H3M",
+                        "C1M",
+                        "h3m",
+                        "c1m",
+                        "h3M",
+                        "c1M",
+                        "H3m",
+                        "C1m",
+                        "H 3 m",
+                        "C 1 m",
+                        "H3 m",
+                        "C1 m",
+                        "H 3m",
+                        "C 1m"
+                    ]
+                },
+                {
+                    "canonicalForm": "OFFICE",
+                    "list": [
+                        "word",
+                        "excel",
+                        "powerpoint",
+                        "office",
+                        "ofise",
+                        "offise",
+                        "OFFICE",
+                        "OFISE",
+                        "OFFISE"
+                    ]
+                },
+                {
+                    "canonicalForm": "SALESFORCE",
+                    "list": [
+                        "salesforce",
+                        "SALESFORCE",
+                        "SALES",
+                        "FORCE"
+                    ]
+                },
+                {
+                    "canonicalForm": "REGISTRO",
+                    "list": [
+                        "registro",
+                        "reg",
+                        "REGISTRO",
+                        "Registro",
+                        "rESGISTRO",
+                        "ALTA",
+                        "alta",
+                        "baja",
+                        "BAJA",
+                        "ALTAS",
+                        "altas",
+                        "bajas",
+                        "BAJAS",
+                        "Alta",
+                        "Altas",
+                        "Baja",
+                        "Bajas",
+                        "UP",
+                        "up",
+                        "down",
+                        "DOWN"
+                    ]
+                },
+                {
+                    "canonicalForm": "PDTI",
+                    "list": [
+                        "BONO",
+                        "BONO PDTI",
+                        "PDTI",
+                        "bono pdti",
+                        "Bono pdti",
+                        "boo pdti",
+                        "bo pdti",
+                        "pdti"
+                    ]
+                },
+                {
+                    "canonicalForm": "venta",
+                    "list": [
+                        "venta",
+                        "VENTA",
+                        "vent",
+                        "enta",
+                        "Venta",
+                        "ven ta",
+                        "ve nta"
+                    ]
+                }
+            ],
+            "roles": []
+        },
+        {
+            "name": "ReclamacionMessage",
+            "subLists": [
+                {
+                    "canonicalForm": "RECLAMACION",
+                    "list": [
+                        "RECLAMACION",
+                        "reclamacion",
+                        "reclamo",
+                        "rec",
+                        "reclamacion",
+                        "RECLAMACION",
+                        "RECLAMO",
+                        "REC",
+                        "RECLAMACIONES",
+                        "reclamaciones",
+                        "reclamos",
+                        "recs",
+                        "reclamaciones",
+                        "RECLAMACIONES",
+                        "RECLAMOS",
+                        "RECS",
+                        "REQS",
+                        "RQS",
+                        "RQ",
+                        "reqs",
+                        "rqs",
+                        "rq"
+                    ]
+                },
+                {
+                    "canonicalForm": "otros",
+                    "list": [
+                        "recuperación",
+                        "RECUPERACIÓN",
+                        "visitas",
+                        "metas",
+                        "recuperacion",
+                        "VISITAS",
+                        "METAS",
+                        "RECUPERACION",
+                        "visita",
+                        "meta",
+                        "recuperaciones",
+                        "VISITA",
+                        "META",
+                        "RECUPERACIONES"
+                    ]
+                }
+            ],
+            "roles": []
+        }
+    ],
+    "prebuiltEntities": [
+        {
+            "name": "datetimeV2",
+            "roles": []
+        }
+    ],
+    "utterances": [
+        {
+            "text": "saludo",
+            "intent": "Saludo",
+            "entities": []
+        },
+        {
+            "text": "hola",
+            "intent": "Saludo",
+            "entities": []
+        },
+        {
+            "text": "Buenas",
+            "intent": "Saludo",
+            "entities": []
+        },
+        {
+            "text": "buenos dias",
+            "intent": "Saludo",
+            "entities": []
+        },
+        {
+            "text": "buenas tardes",
+            "intent": "Saludo",
+            "entities": []
+        },
+        {
+            "text": "buenas noches",
+            "intent": "Saludo",
+            "entities": []
+        },
+        {
+            "text": "buenas noches",
+            "intent": "Saludo",
+            "entities": []
+        },
+        {
+            "text": "mi reclamación es por un tema como visitas metas o recuperación",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 34,
+                    "endPos": 62
+                }
+            ]
+        },
+        {
+            "text": "mi reclamacion es por un tema como visitas metas o recuperacion",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 34,
+                    "endPos": 62
+                }
+            ]
+        },
+        {
+            "text": "mi reclamación es por un tema como visitas",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 34,
+                    "endPos": 41
+                }
+            ]
+        },
+        {
+            "text": "mi reclamacion es por un tema como visitas",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 34,
+                    "endPos": 41
+                }
+            ]
+        },
+        {
+            "text": "mi reclamación es por un tema como metas",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 34,
+                    "endPos": 39
+                }
+            ]
+        },
+        {
+            "text": "mi reclamacion es por un tema como metas",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 34,
+                    "endPos": 39
+                }
+            ]
+        },
+        {
+            "text": "mi reclamación es por un tema como recuperación",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 34,
+                    "endPos": 46
+                }
+            ]
+        },
+        {
+            "text": "mi reclamación es por un tema como recuperacion",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 34,
+                    "endPos": 46
+                }
+            ]
+        },
+        {
+            "text": "¿CÓMO SE DEBE CARGAR LA PLANTILLA DE RECLAMOS EN REMEDY?",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 36,
+                    "endPos": 45
+                }
+            ]
+        },
+        {
+            "text": "¿cómo se debe cargar la plantilla de reclamos en remedy?",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 36,
+                    "endPos": 45
+                }
+            ]
+        },
+        {
+            "text": "¿como se debe cargar la plantilla de reclamos en remedy?",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 36,
+                    "endPos": 45
+                }
+            ]
+        },
+        {
+            "text": "como se carga un reclamo en remedy",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 16,
+                    "endPos": 25
+                }
+            ]
+        },
+        {
+            "text": "COMO SE CARGA UN RECLAMO EN REMEDY",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 16,
+                    "endPos": 25
+                }
+            ]
+        },
+        {
+            "text": "COMO SE CARGA UN REC EN REMEDY",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 16,
+                    "endPos": 20
+                }
+            ]
+        },
+        {
+            "text": "COMO SE CARGA UN RQ EN REMEDY",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 16,
+                    "endPos": 19
+                }
+            ]
+        },
+        {
+            "text": "COMO SE CARGA UN REQ EN REMEDY",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 16,
+                    "endPos": 20
+                }
+            ]
+        },
+        {
+            "text": "como se carga un rq en remedy",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 16,
+                    "endPos": 19
+                }
+            ]
+        },
+        {
+            "text": "como se carga un req en remedy",
+            "intent": "Reclamaciones",
+            "entities": [
+                {
+                    "entity": "ReclamacionMessage",
+                    "startPos": 16,
+                    "endPos": 20
+                }
+            ]
+        },
+        {
+            "text": "venta",
+            "intent": "Ventas",
+            "entities": []
+        },
+        {
+            "text": "En el archivo no aparece una venta realizada",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 28,
+                    "endPos": 33
+                }
+            ]
+        },
+        {
+            "text": "no aparece una venta realizada",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 15,
+                    "endPos": 20
+                }
+            ]
+        },
+        {
+            "text": "por que no me aparece una venta realizada",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 26,
+                    "endPos": 31
+                }
+            ]
+        },
+        {
+            "text": "No me pagaron bono PDTI",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 18,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "El bono PDTI no lo pagaron",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 7,
+                    "endPos": 11
+                }
+            ]
+        },
+        {
+            "text": "porque no pagaron el pdti",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 18,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "que paso con el pdti este mes",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 15,
+                    "endPos": 19
+                }
+            ]
+        },
+        {
+            "text": "Qué valores de pago debo tener en cuenta (restar) a la hora de calcular la recuperación Q",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 74,
+                    "endPos": 88
+                }
+            ]
+        },
+        {
+            "text": "Que valores de pago debo tener en cuenta (restar) a la hora de calcular la recuperacion Q",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 74,
+                    "endPos": 88
+                }
+            ]
+        },
+        {
+            "text": "Qué valores se restan del calculo de la recuperación Q",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 39,
+                    "endPos": 53
+                }
+            ]
+        },
+        {
+            "text": "Que valores se restan del calculo de la recuperacion Q",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 39,
+                    "endPos": 53
+                }
+            ]
+        },
+        {
+            "text": "Apliqué para recuperación Q pero no me llegó pago",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 13,
+                    "endPos": 27
+                }
+            ]
+        },
+        {
+            "text": "Aplique para recuperacion Q pero no me llego pago",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 13,
+                    "endPos": 27
+                }
+            ]
+        },
+        {
+            "text": "Los equipos Caterpillar no me están contando al 100%",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 23
+                }
+            ]
+        },
+        {
+            "text": "LOS EQUIPOS CATERPILLAR NO ME ESTÁN CONTANDO AL 100%",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 23
+                }
+            ]
+        },
+        {
+            "text": "Los equipos Caterpilar no me están contando al 100%",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "LOS EQUIPOS CATERPILAR NO ME ESTÁN CONTANDO AL 100%",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "Los equipos Caterpilar no me están contando",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "Los equipos Caterpilar no me cuentan",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "Los equipos Caterpilar estan",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "Los equipos Caterpillar no me están contando",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "Los equipos Caterpillar no me cuentan",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "Los equipos Caterpillar estan",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 12,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "Las ventas del plan H3M no están contando al 100%",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 20,
+                    "endPos": 25
+                }
+            ]
+        },
+        {
+            "text": "Las ventas del plan C1E no están contando al 100%",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 20,
+                    "endPos": 25
+                }
+            ]
+        },
+
+        {
+            "text": "vendi 5 licencias de office pero solo me está saliendo 1",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 6,
+                    "endPos": 18
+                }
+            ]
+        },
+        {
+            "text": "venta de office",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 9,
+                    "endPos": 14
+                }
+            ]
+        },
+        {
+            "text": "vender 5 licencias de office pero solo me está saliendo 1",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 19,
+                    "endPos": 56
+                }
+            ]
+        },
+        {
+            "text": "vender licencias de office",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 25
+                }
+            ]
+        },
+        {
+            "text": "vendi licencias de office",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 18,
+                    "endPos": 24
+                }
+            ]
+        },
+        {
+            "text": "vendi 5 licencias de office con cierta ms pero solo me está saliendo 1",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 20,
+                    "endPos": 29
+                }
+            ]
+        },
+        {
+            "text": "Me están contando una línea como Down cuando fue un Up",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 33,
+                    "endPos": 37
+                }
+            ]
+        },
+        {
+            "text": "Me estan contando una linea como Down cuando fue un Up",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 51,
+                    "endPos": 53
+                }
+            ]
+        },
+        {
+            "text": "Me estan contando una linea como up cuando fue un down",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 33,
+                    "endPos": 35
+                }
+            ]
+        },
+        {
+            "text": "como saber si un registro de alta me esta contando",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 33
+                }
+            ]
+        },
+        {
+            "text": "como saber si un registro de altas me esta contando",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 34
+                }
+            ]
+        },
+        {
+            "text": "como saber si un registro de baja me esta contando",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 33
+                }
+            ]
+        },
+        {
+            "text": "como saber si un registro de bajas me esta contando",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 34
+                }
+            ]
+        },
+        {
+            "text": "como saber si un registro de updown me esta contando",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 34
+                }
+            ]
+        },
+        {
+            "text": "no me aparece un registro de baja",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 32
+                }
+            ]
+        },
+        {
+            "text": "no me aparece un registro de bajas",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 33
+                }
+            ]
+        },
+        {
+            "text": "no me aparece un registro de alta",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 32
+                }
+            ]
+        },
+        {
+            "text": "no me aparece un registro de altas",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 17,
+                    "endPos": 33
+                }
+            ]
+        },
+        {
+            "text": "no me aparece una alta en mis ventas",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 18,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "no me aparece unas altas en mis ventas",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 19,
+                    "endPos": 24
+                }
+            ]
+        },
+        {
+            "text": "no me aparece una baja en mis ventas",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 18,
+                    "endPos": 22
+                }
+            ]
+        },
+        {
+            "text": "no me aparece unas bajas en mis ventas",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 19,
+                    "endPos": 24
+                }
+            ]
+        },
+        {
+            "text": "en el archivo no aparece una baja realizada",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 29,
+                    "endPos": 33
+                }
+            ]
+        },
+        {
+            "text": "en el archivo no aparece unas bajas realizada",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 30,
+                    "endPos": 35
+                }
+            ]
+        },
+        {
+            "text": "en el archivo no aparece una alta realizada",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 29,
+                    "endPos": 33
+                }
+            ]
+        },
+        {
+            "text": "en el archivo no aparece unas altas realizadas",
+            "intent": "Ventas",
+            "entities": [
+                {
+                    "entity": "VentaMessage",
+                    "startPos": 30,
+                    "endPos": 35
+                }
+            ]
+        },
+        {
+            "text": "comision",
+            "intent": "Comision",
+            "entities": []
+        },
+        {
+            "text": "OBJECION",
+            "intent": "Comision",
+            "entities": []
+        },
+        {
+            "text": "compensacion",
+            "intent": "Compensacion",
+            "entities": []
+        },
+        {
+            "text": "Inconsistencia",
+            "intent": "Compensacion",
+            "entities": []
+        },
+        {
+            "text": "no cumple con condiciones para ser tenido en cuenta en las comisiones",
+            "intent": "Compensacion",
+            "entities": []
+        },
+        {
+            "text": "no cumple con condiciones",
+            "intent": "Compensacion",
+            "entities": []
+        },
+        {
+            "text": "reclamacion",
+            "intent": "Reclamaciones",
+            "entities": []
+        },
+        {
+            "text": "reclamaciones",
+            "intent": "Reclamaciones",
+            "entities": []
+        },
+        {
+            "text": "que debo escribir en el campo suscriptor de la plantilla de reclamaciones",
+            "intent": "Reclamaciones",
+            "entities": []
+        },
+        {
+            "text": "si mi reclamación es por un tema como visitas metas o recuperacion que debo escribir en el campo suscriptor",
+            "intent": "Reclamaciones",
+            "entities": []
+        },
+        {
+            "text": "que debo escribir en el campo suscriptor",
+            "intent": "Reclamaciones",
+            "entities": []
+        },
+        {
+            "text": "campo suscriptor",
+            "intent": "Reclamaciones",
+            "entities": []
+        },
+        {
+            "text": "penalizacion",
+            "intent": "Penalizaciones",
+            "entities": []
+        },
+        {
+            "text": "penalizaciones",
+            "intent": "Penalizaciones",
+            "entities": []
+        },
+        {
+            "text": "como saber si me estan penalizando por carterizacion",
+            "intent": "Penalizaciones",
+            "entities": []
+        },
+        {
+            "text": "como saber si me estan penalizando por duracion de contrato",
+            "intent": "Penalizaciones",
+            "entities": []
+        },
+        {
+            "text": "ignore",
+            "intent": "Cancel",
+            "entities": []
+        },
+        {
+            "text": "cancel",
+            "intent": "Cancel",
+            "entities": []
+        },
+        {
+            "text": "salir",
+            "intent": "Cancel",
+            "entities": []
+        },
+        {
+            "text": "exit",
+            "intent": "Cancel",
+            "entities": []
+        },
+        {
+            "text": "winter is coming",
+            "intent": "None",
+            "entities": []
+        }
+    ],
+    "versionId": "19",
+    "name": "gradoluis-880a",
+    "desc": "Luis Model for CoreBot",
+    "culture": "en-us",
+    "tokenizerVersion": "1.0.0",
+    "patternAnyEntities": [],
+    "regex_entities": [],
+    "phraselists": [],
+    "regex_features": [],
+    "patterns": [],
+    "settings": []
+}

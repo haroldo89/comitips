@@ -1,0 +1,597 @@
+{
+	"luis_schema_version": "3.2.0",
+	"versionId": "0.5",
+	"name": "gradoluis-880a",
+	"desc": "Luis Model for CoreBot",
+	"culture": "en-us",
+	"tokenizerVersion": "1.0.0",
+	"intents": [
+		{
+			"name": "Saludo"
+		},
+		{
+			"name": "Ventas"
+		},
+		{
+			"name": "Compensacion"
+		},
+		{
+			"name": "Reclamaciones"
+		},
+		{
+			"name": "Penalizaciones"
+		},
+		{
+			"name": "Comision"
+		},
+		{
+			"name": "Cancel"
+		},
+		{
+			"name": "None"
+		}
+	],
+	"entities": [],
+	"composites": [
+		{
+			"name": "de",
+			"children": [
+				"Agente"
+			],
+			"roles": []
+		},
+		{
+			"name": "para",
+			"children": [
+				"Agente"
+			],
+			"roles": []
+		}
+	],
+	"closedLists": [
+		{
+			"name": "Agente",
+			"subLists": [
+				{
+					"canonicalForm": "CENTRO_EXPERIENCIA",
+					"list": [
+						"Centro",
+						"centro de experiencia",
+						"centro de exper",
+						"CENTRO DE EXPERIENCIA",
+						"CENTROS DE EXPERIENCIA"
+					]
+				},
+				{
+					"canonicalForm": "PREVENTA",
+					"list": [
+						"PREVENTA",
+						"preventa",
+						"pre venta",
+						"PRE VENTA"
+					]
+				},
+				{
+					"canonicalForm": "CORPORACIONES",
+					"list": [
+						"CORPORACION",
+						"CORPORACIONES",
+						"corporacion",
+						"corporaciones"
+					]
+				},
+				{
+					"canonicalForm": "EMPRESAS",
+					"list": [
+						"EMPRESA",
+						"empresa",
+						"EMPRESAS",
+						"empresas"
+					]
+				},
+				{
+					"canonicalForm": "CANAL_AGENTES_RETAIL",
+					"list": [
+						"CANAL AGENTES RETAIL",
+						"AGENTES RETAIL",
+						"CANAL AGENTES",
+						"canal agentes retail",
+						"agentes retail",
+						"canal agentes"
+					]
+				}
+			],
+			"roles": []
+		},
+		{
+			"name": "VentaMessage",
+			"subLists": [
+				{
+					"canonicalForm": "OFFICE",
+					"list": [
+						"word",
+						"excel",
+						"powerpoint",
+						"office",
+						"ofise",
+						"offise",
+						"OFFICE",
+						"OFISE",
+						"OFFISE"
+					]
+				},
+				{
+					"canonicalForm": "SALESFORCE",
+					"list": [
+						"salesforce",
+						"SALESFORCE",
+						"SALES",
+						"FORCE"
+					]
+				},
+				{
+					"canonicalForm": "REGISTRO",
+					"list": [
+						"registro",
+						"reg",
+						"REGISTRO",
+						"Registro",
+						"rESGISTRO",
+						"ALTA",
+						"alta",
+						"baja",
+						"BAJA",
+						"ALTAS",
+						"altas",
+						"bajas",
+						"BAJAS",
+						"Alta",
+						"Altas",
+						"Baja",
+						"Bajas",
+						"UP",
+						"up",
+						"down",
+						"DOWN"
+					]
+				}
+			],
+			"roles": []
+		},
+		{
+			"name": "ReclamacionMessage",
+			"subLists": [
+				{
+					"canonicalForm": "RECLAMACION",
+					"list": [
+						"RECLAMACION",
+						"reclamacion",
+						"reclamo",
+						"rec",
+						"reclamacion",
+						"RECLAMACION",
+						"RECLAMO",
+						"REC",
+						"RECLAMACIONES",
+						"reclamaciones",
+						"reclamos",
+						"recs",
+						"reclamaciones",
+						"RECLAMACIONES",
+						"RECLAMOS",
+						"RECS",
+						"REQS",
+						"RQS",
+						"RQ",
+						"reqs",
+						"rqs",
+						"rq"
+					]
+				},
+				{
+					"canonicalForm": "otros",
+					"list": [
+						"recuperación",
+						"RECUPERACIÓN",
+						"visitas",
+						"metas",
+						"recuperacion",
+						"VISITAS",
+						"METAS",
+						"RECUPERACION",
+						"visita",
+						"meta",
+						"recuperaciones",
+						"VISITA",
+						"META",
+						"RECUPERACIONES"
+					]
+				}
+			],
+			"roles": []
+		}
+	],
+	"patternAnyEntities": [],
+	"regex_entities": [],
+	"prebuiltEntities": [
+		{
+			"name": "datetimeV2",
+			"roles": []
+		}
+	],
+	"model_features": [],
+	"regex_features": [],
+	"patterns": [],
+	"utterances": [
+		{
+			"text": "hola",
+			"intent": "Saludo",
+			"entities": []
+		},
+		{
+			"text": "Buenas",
+			"intent": "Saludo",
+			"entities": []
+		},
+		{
+			"text": "buenos dias",
+			"intent": "Saludo",
+			"entities": []
+		},
+		{
+			"text": "buenas tardes",
+			"intent": "Saludo",
+			"entities": []
+		},
+		{
+			"text": "buenas noches",
+			"intent": "Saludo",
+			"entities": []
+		},
+		{
+			"text": "buenas noches",
+			"intent": "Saludo",
+			"entities": []
+		},
+		{
+			"text": "mi reclamación es por un tema como visitas metas o recuperación",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 34,
+					"endPos": 62
+				}
+			]
+		},
+		{
+			"text": "mi reclamacion es por un tema como visitas metas o recuperacion",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 34,
+					"endPos": 62
+				}
+			]
+		},
+		{
+			"text": "mi reclamación es por un tema como visitas",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 34,
+					"endPos": 41
+				}
+			]
+		},
+		{
+			"text": "mi reclamacion es por un tema como visitas",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 34,
+					"endPos": 41
+				}
+			]
+		},
+		{
+			"text": "mi reclamación es por un tema como metas",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 34,
+					"endPos": 39
+				}
+			]
+		},
+		{
+			"text": "mi reclamacion es por un tema como metas",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 34,
+					"endPos": 39
+				}
+			]
+		},
+		{
+			"text": "mi reclamación es por un tema como recuperación",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 34,
+					"endPos": 46
+				}
+			]
+		},
+		{
+			"text": "mi reclamación es por un tema como recuperacion",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 34,
+					"endPos": 46
+				}
+			]
+		},
+		{
+			"text": "¿CÓMO SE DEBE CARGAR LA PLANTILLA DE RECLAMOS EN REMEDY?",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 36,
+					"endPos": 45
+				}
+			]
+		},
+		{
+			"text": "¿cómo se debe cargar la plantilla de reclamos en remedy?",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 36,
+					"endPos": 45
+				}
+			]
+		},
+		{
+			"text": "¿como se debe cargar la plantilla de reclamos en remedy?",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 36,
+					"endPos": 45
+				}
+			]
+		},
+		{
+			"text": "como se carga un reclamo en remedy",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 16,
+					"endPos": 25
+				}
+			]
+		},
+		{
+			"text": "COMO SE CARGA UN RECLAMO EN REMEDY",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 16,
+					"endPos": 25
+				}
+			]
+		},
+		{
+			"text": "COMO SE CARGA UN REC EN REMEDY",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 16,
+					"endPos": 20
+				}
+			]
+		},
+		{
+			"text": "COMO SE CARGA UN RQ EN REMEDY",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 16,
+					"endPos": 19
+				}
+			]
+		},
+		{
+			"text": "COMO SE CARGA UN REQ EN REMEDY",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 16,
+					"endPos": 20
+				}
+			]
+		},
+		{
+			"text": "como se carga un rq en remedy",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 16,
+					"endPos": 19
+				}
+			]
+		},
+		{
+			"text": "como se carga un req en remedy",
+			"intent": "Reclamaciones",
+			"entities": [
+				{
+					"entity": "ReclamacionMessage",
+					"startPos": 16,
+					"endPos": 20
+				}
+			]
+		},
+		{
+			"text": "vendi 5 licencias de office pero solo me está saliendo 1",
+			"intent": "Ventas",
+			"entities": [
+				{
+					"entity": "VentaMessage",
+					"startPos": 6,
+					"endPos": 18
+				}
+			]
+		},
+		{
+			"text": "venta de office",
+			"intent": "Ventas",
+			"entities": [
+				{
+					"entity": "VentaMessage",
+					"startPos": 9,
+					"endPos": 14
+				}
+			]
+		},
+		{
+			"text": "vender 5 licencias de office pero solo me está saliendo 1",
+			"intent": "Ventas",
+			"entities": [
+				{
+					"entity": "VentaMessage",
+					"startPos": 19,
+					"endPos": 56
+				}
+			]
+		},
+		{
+			"text": "vender licencias de office",
+			"intent": "Ventas",
+			"entities": [
+				{
+					"entity": "VentaMessage",
+					"startPos": 17,
+					"endPos": 25
+				}
+			]
+		},
+		{
+			"text": "vendi licencias de office",
+			"intent": "Ventas",
+			"entities": [
+				{
+					"entity": "VentaMessage",
+					"startPos": 18,
+					"endPos": 24
+				}
+			]
+		},
+		{
+			"text": "vendi 5 licencias de office con cierta ms pero solo me está saliendo 1",
+			"intent": "Ventas",
+			"entities": [
+				{
+					"entity": "VentaMessage",
+					"startPos": 20,
+					"endPos": 29
+				}
+			]
+		},
+		{
+			"text": "OBJECION",
+			"intent": "Comision",
+			"entities": []
+		},
+		{
+			"text": "Inconsistencia",
+			"intent": "Compensacion",
+			"entities": []
+		},
+		{
+			"text": "no cumple con condiciones para ser tenido en cuenta en las comisiones",
+			"intent": "Compensacion",
+			"entities": []
+		},
+		{
+			"text": "no cumple con condiciones",
+			"intent": "Compensacion",
+			"entities": []
+		},
+		{
+			"text": "que debo escribir en el campo suscriptor de la plantilla de reclamaciones",
+			"intent": "Reclamaciones",
+			"entities": []
+		},
+		{
+			"text": "si mi reclamación es por un tema como visitas metas o recuperacion que debo escribir en el campo suscriptor",
+			"intent": "Reclamaciones",
+			"entities": []
+		},
+		{
+			"text": "que debo escribir en el campo suscriptor",
+			"intent": "Reclamaciones",
+			"entities": []
+		},
+		{
+			"text": "campo suscriptor",
+			"intent": "Reclamaciones",
+			"entities": []
+		},
+		{
+			"text": "como saber si me estan penalizando por carterizacion",
+			"intent": "Penalizaciones",
+			"entities": []
+		},
+		{
+			"text": "como saber si me estan penalizando por duracion de contrato",
+			"intent": "Penalizaciones",
+			"entities": []
+		},
+		{
+			"text": "ignore",
+			"intent": "Cancel",
+			"entities": []
+		},
+		{
+			"text": "cancel",
+			"intent": "Cancel",
+			"entities": []
+		},
+		{
+			"text": "salir",
+			"intent": "Cancel",
+			"entities": []
+		},
+		{
+			"text": "exit",
+			"intent": "Cancel",
+			"entities": []
+		},
+		{
+			"text": "winter is coming",
+			"intent": "None",
+			"entities": []
+		}
+	],
+	"settings": []
+}
