@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using CoreBot.Chain;
 using CoreBot.Details;
 using CoreBot.Message;
 using CoreBot.Model;
@@ -82,7 +83,8 @@ namespace Microsoft.BotBuilderSamples.Dialogs
             string message = string.Empty;
             if ((bool)stepContext.Result)
             {
-                message = GetResultMessage(stepContext, stbResult);
+                message = GetResultMessageChain(stepContext, stbResult);
+                // message = GetResultMessage(stepContext, stbResult);
                 comisionDetails.ResultMessage = message;
                 var promptMessage = MessageFactory.Text(message, message, InputHints.ExpectingInput);
                 return await stepContext.PromptAsync(nameof(ConfirmPrompt), new PromptOptions { Prompt = promptMessage }, cancellationToken);
@@ -112,7 +114,48 @@ namespace Microsoft.BotBuilderSamples.Dialogs
         }
 
         /// <summary>
-        /// Obtener mensaje de resultado
+        /// Obtener resultado de mensaje a traves de cadena de responsabilidad
+        /// </summary>
+        /// <param name="stepContext"></param>
+        /// <param name="stbResult"></param>
+        /// <returns></returns>
+        private static string GetResultMessageChain(WaterfallStepContext stepContext, StringBuilder stbResult)
+        {
+            string message;
+            // Setup Chain of Responsibility
+            BotMessage office = new Office();
+            BotMessage salesforce = new Salesforce();
+            BotMessage registro = new Registro();
+            BotMessage planesflex = new Planesflex();
+            BotMessage caterpillar = new Caterpillar();
+            BotMessage recuperacionq = new Recuperacionq();
+            BotMessage pdti = new Pdti();
+            BotMessage venta = new Venta();
+            BotMessage renegociacion = new Renegociacion();
+
+            office.SetSuccessor(salesforce);
+            salesforce.SetSuccessor(registro);
+            registro.SetSuccessor(planesflex);
+            planesflex.SetSuccessor(caterpillar);
+            caterpillar.SetSuccessor(recuperacionq);
+            recuperacionq.SetSuccessor(pdti);
+            pdti.SetSuccessor(venta);
+            venta.SetSuccessor(renegociacion);
+
+            // enviar solicitud
+            office.ProcessRequest(stepContext, stbResult);
+
+            if (string.IsNullOrWhiteSpace(stbResult.ToString()))
+            {
+                stbResult.Append("tu solicitud no puede ser procesada, intentalo nuevamente.");
+            }
+            message = stbResult.ToString();
+            return message;
+        }
+
+
+        /// <summary>
+        /// Obtener mensaje de resultado.
         /// </summary>
         /// <param name="stepContext"></param>
         /// <param name="stbResult"></param>
